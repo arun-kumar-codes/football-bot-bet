@@ -461,13 +461,13 @@ def run():
         return
     
     SESSION_TOKEN = session_token
-    print(f"  ✓ Login successful (session token: {SESSION_TOKEN[:20]}...)")
+    print(f"  ✓ Login successful (session token: *** redacted)")
     
     backoff = 1
     max_retries = 5
     
-    print(f"Using App Key: {APP_KEY}")
-    print(f"Session Token (first 20 chars): {SESSION_TOKEN[:20]}...")
+    print(f"Using App Key: *** (redacted)")
+    print(f"Session Token: *** (redacted)")
     print(f"Connecting to Betfair Stream API (SSL socket, NOT WebSocket)")
     print(f"Host: stream-api.betfair.com:443")
     print("-" * 60)

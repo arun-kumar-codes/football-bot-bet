@@ -90,7 +90,7 @@ def test_get_inplay_matches():
     api_endpoint = betfair_config.get("api_endpoint", "https://api.betfair.com/exchange/betting/rest/v1.0")
     
     print(f"\n📋 Betfair Configuration:")
-    print(f"  - App Key: {app_key}")
+    print(f"  - App Key: *** (redacted)")
     print(f"  - Username: {username}")
     print(f"  - Password: {'*** (loaded)' if password else 'NOT SET (check BETFAIR_PASSWORD in .env file)'}")
     print(f"  - API Endpoint: {api_endpoint}")
@@ -153,8 +153,8 @@ def test_get_inplay_matches():
         
         print(f"✓ Login successful")
         print(f"\n📝 Session Information:")
-        print(f"  - Session Token: {session_token}")
-        print(f"  - App Key: {app_key}")
+        print(f"  - Session Token: *** (redacted)")
+        print(f"  - App Key: *** (redacted)")
     except Exception as e:
         print(f"❌ Login error: {str(e)}")
         import traceback

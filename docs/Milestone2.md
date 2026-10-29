@@ -64,8 +64,8 @@ The bot now automatically:
 **How it works:**
 1. **Authentication:**
    - Uses API Key and Secret for authentication
-   - API Key: `5vm1iY7mSjjK5ucr`
-   - API Secret: `sdGH2ss0BWkJxOqDjMECLMZD5iobNBCf`
+   - API Key: `YOUR_LIVE_SCORE_API_KEY`
+   - API Secret: `YOUR_LIVE_SCORE_API_SECRET`
 
 2. **Rate Limiting:**
    - Tracks requests per day and per hour

@@ -31,7 +31,7 @@ Milestone 1 has been successfully completed. The bot can now:
 **Evidence:**
 ```
 2025-11-12 10:59:42 - BetfairBot - INFO - cert_login - Attempting login to Betfair Italy Exchange...
-2025-11-12 10:59:43 - BetfairBot - INFO - cert_login - Login successful! Session token: uTvnDk/a...j+0PDpY=
+2025-11-12 10:59:43 - BetfairBot - INFO - cert_login - Login successful! Session token: ******** (redacted)
 2025-11-12 10:59:43 - BetfairBot - INFO - keep_alive - Keep-alive started (interval: 300s)
 2025-11-12 10:59:44 - BetfairBot - INFO - market_service - Account funds retrieved successfully
 2025-11-12 10:59:44 - BetfairBot - INFO - main - Account balance: 0.25

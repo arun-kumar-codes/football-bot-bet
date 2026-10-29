@@ -234,7 +234,7 @@ def test_login_detailed(config_data: dict):
         from auth.cert_login import BetfairAuthenticator
         
         print(f"Initializing authenticator...")
-        print(f"  → app_key: {config_data['app_key'][:8]}... (length: {len(config_data['app_key'])})")
+        print(f"  → app_key: *** (redacted, length: {len(config_data['app_key'])})")
         print(f"  → username: {config_data['username']}")
         print(f"  → cert_path: {config_data.get('cert_path', 'N/A')}")
         print(f"  → key_path: {config_data.get('key_path', 'N/A')}")
@@ -286,10 +286,7 @@ def test_login_detailed(config_data: dict):
             print_check("Login successful", True, "")
             session_token = authenticator.get_session_token()
             if session_token:
-                masked_token = f"{session_token[:8]}...{session_token[-8:]}" if len(session_token) > 16 else "***"
-                print(f"  → Session token (masked): {masked_token}")
-                print(f"  → Session token (FULL): {session_token}")
-                print(f"  → App Key: {config_data['app_key']}")
+                print(f"  → Session token: *** (redacted)")
             return True
         else:
             print_check("Login failed", False, error or "Unknown error")

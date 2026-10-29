@@ -32,7 +32,7 @@ def test_telegram_basic():
     
     print(f"\n📋 Telegram Configuration:")
     print(f"  - Telegram enabled: {notifications_config.get('telegram_enabled', False)}")
-    print(f"  - Bot Token: {telegram_config.get('bot_token', 'N/A')[:20]}..." if telegram_config.get('bot_token') else "  - Bot Token: Not set")
+    print(f"  - Bot Token: *** (redacted)" if telegram_config.get('bot_token') else "  - Bot Token: Not set")
     print(f"  - Chat ID: {telegram_config.get('chat_id', 'N/A')}")
     
     if not telegram_config.get("bot_token") or not telegram_config.get("chat_id"):

@@ -93,8 +93,8 @@ def test_verify_inplay_matches():
             return
         
         print(f"✓ Login successful")
-        print(f"  - App Key: {app_key}")
-        print(f"  - Session Token: {session_token}")
+        print(f"  - App Key: *** (redacted)")
+        print(f"  - Session Token: *** (redacted)")
     except Exception as e:
         print(f"❌ Login error: {str(e)}")
         import traceback
